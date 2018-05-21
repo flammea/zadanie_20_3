@@ -1,8 +1,9 @@
 import { createStore, combineReducers } from 'redux';
-import DevTools from './DevTools';
+import reducers from '../reducers/index';
+import DevTools from '../DevTools';
 
 const store = createStore(
-  reducer,
+  reducers,
   DevTools.instrument()
 );
 
